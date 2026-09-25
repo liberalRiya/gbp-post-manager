@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GBP Post Manager
 
-## Getting Started
+A web application for creating, managing, and publishing Google Business Profile (GBP) posts.
 
-First, run the development server:
+The application provides a dashboard where users can manage locations, create GBP posts, generate post content using AI, select calls-to-action, preview posts, save drafts, and manage published posts.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+GBP Post Manager is designed to simplify the process of creating and managing Google Business Profile posts.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Users can:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Sign up and log in
+- Access a dashboard
+- Manage GBP locations
+- Create new GBP posts
+- Generate post content using AI
+- Select a call-to-action (CTA)
+- Preview posts before publishing
+- Save posts as drafts
+- Publish posts
+- Manage existing posts
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+### Authentication
+- User sign up
+- User login
+- Authentication handled using Supabase
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Dashboard
+- Central dashboard for managing GBP posts
+- Access to locations and post management features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Location Management
+- View and manage GBP locations
+- Select a location when creating a post
 
-## Deploy on Vercel
+### GBP Post Creation
+- Create new Google Business Profile posts
+- Enter and edit post content
+- Select a call-to-action
+- Preview the post before publishing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### AI Content Generation
+- Generate post content using AI
+- Use generated content as a starting point
+- Edit generated content before publishing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Draft Management
+- Save posts as drafts
+- Continue editing saved drafts
+
+### Publishing
+- Review the post before publishing
+- Publish a completed post
+
+### Post Management
+- View and manage created posts
+- Manage drafts and published posts
+
+## Technology Stack
+
+### Frontend
+- Next.js
+- React
+- JavaScript
+- CSS
+
+### Backend / Services
+- Supabase
+- Supabase Authentication
+- Supabase Database
+
+### Development Tools
+- Node.js
+- npm
+- ESLint
+
+## Project Structure
+
+```text
+gbp-post-manager/
+│
+├── public/
+│
+├── src/
+│   └── app/
+│       ├── lib/
+│       │   └── supabase/
+│       ├── login/
+│       ├── signup/
+│       └── ...
+│
+├── .env.example
+├── .gitignore
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+└── README.md
